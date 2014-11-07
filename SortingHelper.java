@@ -50,6 +50,11 @@ public class SortingHelper {
 			SortingAlgorithms.insertionSort(numbers);
 			endTime = System.nanoTime();			
 		}
+		else if (sortingAlgorithmName.equals("merge")){
+			startTime = System.nanoTime();
+			SortingAlgorithms.mergeSort(numbers);
+			endTime = System.nanoTime();			
+		}
 		double duration =  (endTime - startTime) / 1000000.0;	
 		return duration;
 	}
